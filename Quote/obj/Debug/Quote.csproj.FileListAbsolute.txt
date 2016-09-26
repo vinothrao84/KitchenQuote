@@ -1,0 +1,5 @@
+C:\Users\Vinoth\Desktop\WorkFiles\Kenneth\Quote\Quote\bin\Quote.dll
+C:\Users\Vinoth\Desktop\WorkFiles\Kenneth\Quote\Quote\bin\Quote.pdb
+C:\Users\Vinoth\Desktop\WorkFiles\Kenneth\Quote\Quote\obj\Debug\Quote.csprojResolveAssemblyReference.cache
+C:\Users\Vinoth\Desktop\WorkFiles\Kenneth\Quote\Quote\obj\Debug\Quote.dll
+C:\Users\Vinoth\Desktop\WorkFiles\Kenneth\Quote\Quote\obj\Debug\Quote.pdb

@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Quote.Main" %>
+
+<%@ Register TagPrefix="uc" TagName="Header" Src="~/Control/header.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Footer" Src="~/Control/footer.ascx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+        .main {
+            width: 1000px; 
+            margin: 0 auto;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="Master_head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div style="background-color: darkgrey; height: 50px">
+                <div class="main">
+                    <uc:Header ID="ucHeader" runat="server"></uc:Header>
+                </div>
+            </div>
+            <div>
+                <div class="main" style="padding: 20px;">
+                    <asp:ContentPlaceHolder ID="Master_ContentHolder_Main" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div style="background-color: darkgrey; height: 50px">
+                <div class="main">
+                    <uc:Footer ID="ucFooter" runat="server"></uc:Footer>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
