@@ -57,6 +57,15 @@
                                 </asp:RadioButtonList>
                             </p>
                         </p>
+                        <p>
+                            Or, you can upload a sample image
+                            <p>
+                                <asp:FileUpload ID="FileUpload1" runat="server" />
+                                <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="Upload" />
+                                <br />
+                                <asp:Label ID="lblUploadMsg" runat="server" Visible="false"></asp:Label>
+                            </p>
+                        </p>
                     </div>
                 </div>
                 <div data-step="2">
@@ -64,7 +73,12 @@
                         <h4>Measurement</h4>
                         <p>
                             Key in the measurement
+                            <p>
+                                You can ignore this section if you've provided an uploaded image
+                            </p>
                         </p>
+                        <br />
+                        <br />
                         <div id="divTopMeasurement">
                             Top:
                             <asp:TextBox ID="txtMeasurement_Top" runat="server"></asp:TextBox>
@@ -111,6 +125,19 @@
                         <h4>Registration</h4>
                         <p>
                             Submit your information and let our crew contact you for further information.
+                        </p>
+                        <p>
+                            Name:
+                            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                            <br />
+                            Email:
+                            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                            <br />
+                            Contact No.:
+                            <asp:TextBox ID="txtContactNo" runat="server"></asp:TextBox>
+                            <br />
+                            <br />
+                            <asp:Button ID="btnSubmitRegistration" runat="server" Text="Submit" OnClick="btnSubmitRegistration_Click" />
                         </p>
                     </div>
                 </div>

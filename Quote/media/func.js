@@ -1,12 +1,15 @@
-﻿$(function () {
-    var isSelected = $("[id*=rbShape] input:checked").val();
+﻿function doValidation(wiz, direction, event) {
 
-    if (isSelected == undefined)
-        $(".btn-default.btn-next").addClass("disabled hidden");
-});
+    var retval = true;
 
-function doValidation(wiz, direction, event) {
-    return false;
+    //if (wiz.currentStep == 1) {
+    //    var isSelected = $("[id*=rbShape] input:checked").val();
+
+    //    if (isSelected == undefined)
+    //        retval = false;
+    //}
+
+    return retval;
 }
 
 function customFunctionality(currentStep) {

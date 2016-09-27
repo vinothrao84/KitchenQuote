@@ -85,6 +85,8 @@
     <Content Include="ws\service.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Email.cs" />
+    <Compile Include="App_Code\Prop.cs" />
     <Compile Include="Control\footer.ascx.cs">
       <DependentUpon>footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\QuoteWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadedImages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
